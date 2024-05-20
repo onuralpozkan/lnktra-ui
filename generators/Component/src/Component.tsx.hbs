@@ -1,0 +1,21 @@
+/* React */
+import * as React from "react";
+
+/* Style */
+import classNames from "classnames";
+import "./index.scss";
+
+/* Interface & Type definitions */
+export interface I{{pascalCase name}} {
+  role?: string;
+}
+
+const {{pascalCase name}}: React.FC<I{{pascalCase name}}> = ({ ...props }) => {
+  return (
+    <div className={classNames("hp-{{kebabCase name}}")} {...props}>
+      {{pascalCase name}}
+    </div>
+  );
+};
+
+export default {{pascalCase name}};
